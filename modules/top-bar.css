@@ -1,0 +1,26 @@
+/* Hide topbar if block in focus */
+.rm-topbar {
+  transition: transform 100ms ease-in-out;
+  position: relative;
+  z-index: 10;
+}
+
+.roam-main:focus-within .rm-topbar {
+  transform: translateY(-100%);
+}
+
+.rm-topbar:focus-within,
+.rm-files-dropzone:hover .rm-topbar {
+  transform: translateY(0%);
+}
+
+.roam-body .roam-app .roam-body-main {
+    flex: 0 0 100%;
+}
+.roam-body .roam-app .roam-main .roam-article {
+    padding: 61px 42px 120px;
+}
+
+:root {
+    --bc-topbar__container: var(--bc-main);
+}

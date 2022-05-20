@@ -1,0 +1,33 @@
+/* Links */
+
+:root {
+    --co-page__link: var(--cl-main);
+    --co-page__link--hover: var(--cl-main);
+    --co-a: var(--cl-main);
+    --co-a--hover: var(--cl-main);
+    --co-reference__page-title: var(--cl-main);
+    --co-logbutton--hover: var(--cl-main);
+    --co-starred__page--hover: var(--cl-main);
+    --co-button__icon--hover: var(--cl-main);
+}
+
+span.rm-page-ref {
+  font-weight: 500 !important;
+}
+
+span.rm-page-ref:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.rm-block-ref:hover {
+    background-color: transparent;
+    color: var(--cl-main);
+}

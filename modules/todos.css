@@ -1,0 +1,30 @@
+/* Todos */
+
+.check-container {
+  display: inline-flex;
+  margin-right: 10px;
+  top: 0;
+  font-weight: normal;
+  width: 25px;
+}
+.check-container::before {
+  content: '[ ';
+}
+.check-container::after {
+  content: '] ';
+}
+.check-container .checkmark {
+  border: 0;
+}
+
+.check-container input:checked~.checkmark, .bp3-control input:checked ~ .bp3-control-indicator {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.check-container input:checked~.checkmark::after {
+  border: 0;
+  content: 'x';
+  color: var(--co-main);
+  transform: translate(8px, 0px);
+}

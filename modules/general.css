@@ -1,0 +1,92 @@
+/* General */
+
+:root {
+  --cl-primary: #18BEEC;
+  --cl-main: #1A1A1A;
+  --cl-secondary: #C5C4C2;
+  --bc-main: #F7F7F7;
+  --bc-highlight: #FDE566;
+  --co-brackets: #C7C3C2;
+  --co-secondary: #C7C3C2;
+  --co-page__title: var(--cl-main);
+
+  --fs-main: 18px;
+  --fs-div: var(--fs-main);
+  --fs-page__title: var(--fs-main);
+  --fw-page__title: bold;
+  --fs-starred__page: 14px;
+  --fs-logbutton: 14px;
+}
+
+@media(prefers-color-scheme: dark) {
+    :root {
+        --cl-main: #CCCCCC;
+        --cl-secondary: #707070;
+        --bc-main: #1A1A1A;
+        --bc-highlight: #784C0D;
+        --co-brackets: #707070;
+        --co-secondary: #707070;
+    }
+}
+
+
+html {
+  caret-color: var(--cl-primary);
+}
+
+
+/* Daily page spacing */
+.roam-log-container .roam-log-page:first-child {
+  min-height: 90vh !important;
+}
+.rm-reference-main {
+  margin-top: 200px;
+}
+
+/* Simpler search input */
+input[type=search]:not(:focus) {
+  box-shadow: none;
+  border: 0;
+}
+input[type=search] {
+    font-family: var(--ff-native);
+}
+.rm-find-or-create-wrapper .search-icon {
+    display: none;
+}
+
+/* Page title */
+.roam-body .roam-app .roam-main .roam-article .rm-title-display {
+    margin-bottom: 12px;
+}
+h1.rm-title-display::before {
+    content: '# ';
+    font-weight: bold;
+}
+
+/* Text */
+.rm-bold::before,
+.rm-bold::after {
+    content: '**';
+    font-weight: bold;
+}
+
+.rm-italics::before,
+.rm-italics::after {
+    content: '__';
+    font-style: italic;
+}
+
+.rm-strikethrough::before,
+.rm-strikethrough::after {
+    content: '~~';
+    text-decoration: line-through;
+}
+
+.rm-highlight {
+    color: var(--cl-main);
+}
+.rm-highlight::before,
+.rm-highlight::after {
+    content: '^^';
+}

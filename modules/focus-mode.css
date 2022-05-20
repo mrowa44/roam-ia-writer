@@ -1,0 +1,37 @@
+/* Focus mode */
+.roam-block-container .roam-block {
+  color: var(--cl-main);
+}
+
+.roam-block-container:focus-within .roam-block {
+  color: var(--cl-main);
+}
+.roam-block-container:focus-within > .rm-block-main > .roam-block {
+  color: var(--cl-main);
+}
+.rm-block-children:focus-within .roam-block {
+  color: var(--cl-secondary);
+}
+.rm-multibar {
+  border-right-color: transparent;
+}
+
+.roam-body .roam-app .roam-main .roam-article:focus-within .rm-title-display {
+    color: var(--cl-secondary);
+}
+
+
+/* Current bullet focus */
+:root {
+    --bc-bullet__inner: var(--cl-secondary);
+}
+
+.roam-block-container:focus-within > .rm-block-main > div:nth-child(1) .rm-bullet .rm-bullet__inner {
+    background-color: black !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    .roam-block-container:focus-within > .rm-block-main > div:nth-child(1) .rm-bullet .rm-bullet__inner {
+        background-color: white !important;
+    }
+}
