@@ -7412,6 +7412,7 @@ hr {
   --bb-reference__item: var(--bc-secondary);
   --bl-reference__item: var(--bc-secondary);
   --co-alias: var(--cl-primary);
+  --co-tags--hover: var(--cl-main);
 
   --fs-main: 20px;
   --fs-secondary: 14px;
