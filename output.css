@@ -7641,7 +7641,6 @@ h1.rm-title-editing-display::before {
 }
 
 :root {
-    /* --co-starred__page: #1A1A1A; */
     --co-starred__page: var(--cl-main);
     --co-starred__page--hover: var(--cl-main);
     --bt-starred__page--hover: 0;
@@ -7690,7 +7689,8 @@ h1.rm-title-editing-display::before {
     cursor: default;
 }
 
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
     padding: 2px 16px;
     overflow: hidden;
     white-space: nowrap;
