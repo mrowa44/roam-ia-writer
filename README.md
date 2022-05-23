@@ -12,4 +12,4 @@
 
 ```
 
-Optionally, copy the [/script.js](script.js) content to [[roam/js]] page
+Optionally, copy the [script.js](script.js) content to [[roam/js]] page
