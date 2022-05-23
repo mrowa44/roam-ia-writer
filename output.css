@@ -7464,6 +7464,10 @@ input[type=search] {
     display: none;
 }
 
+.rm-block__controls {
+  font-size: var(--fs-main);
+  line-height: initial;
+}
 /* Page title */
 .roam-body .roam-app .roam-main .roam-article .rm-title-editing-display,
 .roam-body .roam-app .roam-main .roam-article .rm-title-display {
