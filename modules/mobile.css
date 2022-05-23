@@ -1,0 +1,23 @@
+@media (max-width: 600px) {
+    :root {
+        --fs-main: 16px;
+    }
+
+    .roam-body .roam-app .roam-main .roam-article {
+        padding: 61px 20px 120px;
+    }
+
+    .check-container {
+        margin-right: 0px;
+        width: 25px;
+    }
+    .check-container input:checked~.checkmark::after {
+        transform: translate(4.5px, 0px);
+    }
+    .check-container::before {
+        content: '[ ';
+    }
+    .check-container::after {
+        content: ']';
+    }
+}

@@ -27,7 +27,7 @@
 }
 
 .roam-body .roam-app .roam-sidebar-container {
-    background-color: #FCFCFC;
+    background-color: var(--bc-secondary);
 }
 .roam-sidebar-container,
 .roam-sidebar-content,
@@ -39,11 +39,6 @@
 }
 
 @media(prefers-color-scheme: dark) {
-    :root {
-    }
-    .roam-body .roam-app .roam-sidebar-container {
-        background-color: #141414;
-    }
     .roam-sidebar-container,
     .roam-sidebar-content,
     .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
@@ -53,13 +48,13 @@
     }
 
     .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
-        border-bottom: 1px solid #1F1F1F;
+        border-bottom: 1px solid var(--bc-secondary);
     }
 }
 
 @media(prefers-color-scheme: light) {
     .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
-        border-bottom: 1px solid #F0F0F0;
+        border-bottom: 1px solid var(--bc-secondary);
     }
 }
 

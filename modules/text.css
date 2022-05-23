@@ -1,0 +1,45 @@
+/* Page title */
+.roam-body .roam-app .roam-main .roam-article .rm-title-editing-display,
+.roam-body .roam-app .roam-main .roam-article .rm-title-display {
+    margin-bottom: 12px;
+}
+.roam-body .roam-app .roam-main .roam-article .rm-title-editing-display {
+    display: flex;
+    align-items: center;
+}
+h1.rm-title-editing-display::before,
+h1.rm-title-display::before {
+    content: '# ';
+    font-weight: bold;
+    font-size: var(--fs-main);
+}
+h1.rm-title-editing-display::before {
+    margin-right: 0.77rem;
+}
+
+/* Text */
+.rm-bold::before,
+.rm-bold::after {
+    content: '**';
+    font-weight: bold;
+}
+
+.rm-italics::before,
+.rm-italics::after {
+    content: '__';
+    font-style: italic;
+}
+
+.rm-strikethrough::before,
+.rm-strikethrough::after {
+    content: '~~';
+    text-decoration: line-through;
+}
+
+.rm-highlight {
+    color: var(--cl-main);
+}
+.rm-highlight::before,
+.rm-highlight::after {
+    content: '^^';
+}

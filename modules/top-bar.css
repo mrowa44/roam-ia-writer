@@ -9,7 +9,7 @@
   transform: translateY(-100%);
 }
 
-.rm-topbar:focus-within,
+.roam-main .rm-topbar:focus-within,
 .rm-files-dropzone:hover .rm-topbar {
   transform: translateY(0%);
 }

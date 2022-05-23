@@ -9,9 +9,11 @@
 }
 .check-container::before {
   content: '[ ';
+  font-family: var(--ff-main);
 }
 .check-container::after {
   content: '] ';
+  font-family: var(--ff-main);
 }
 .check-container .checkmark {
   border: 0;
@@ -26,5 +28,6 @@
   border: 0;
   content: 'x';
   color: var(--co-main);
+  font-family: var(--ff-main);
   transform: translate(8px, 0px);
 }
