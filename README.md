@@ -26,7 +26,7 @@ Features:
 
 ### Demo
 
-![demo](demo.mov)
+![demo](demo.mp4)
 
 
 ### Contributing
