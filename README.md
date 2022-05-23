@@ -8,6 +8,8 @@
 :root {
   --ff-main: "iA Writer Duo"; 
   /* default, other: "iA Writer Mono", "iA Writer Quattro" */
+
+  --fs-main: 20px;
 }
 
 ```
@@ -19,4 +21,14 @@ Features:
 - iA Writer fonts
 - todos style
 - focus mode
-- autofocuses the last focused block on returning to roam
+- autofocuses the last focused block on returning to roam (like a normal editor does)
+
+
+Demo
+@todo lol
+![demo](demo.mov)
+
+
+Contributing
+
+To build run: `./combine.sh`
