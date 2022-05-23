@@ -7413,8 +7413,10 @@ hr {
   --br-reference__item: var(--bc-secondary);
   --bb-reference__item: var(--bc-secondary);
   --bl-reference__item: var(--bc-secondary);
+  --co-alias: var(--cl-primary);
 
   --fs-main: 20px;
+  --fs-secondary: 14px;
   --fs-div: var(--fs-main);
   --fs-page__title: var(--fs-main);
   --fw-page__title: bold;
@@ -7644,12 +7646,17 @@ h1.rm-title-editing-display::before {
     --co-starred__page--hover: var(--cl-main);
     --bt-starred__page--hover: 0;
     --br-starred__page--hover: 0;
-    --bb-starred__page--hover: 0;
+    --bb-starred__page--hover: 1px solid transparent;
     --bl-starred__page--hover: 0;
     --bt-starred__page: 0;
     --br-starred__page: 0;
-    --bb-starred__page: 0;
+    --bb-starred__page: 1px solid var(--bc-secondary);
     --bl-starred__page: 0;
+    --co-left-sidebar__db-title--hover: var(--cl-primary);
+    --co-graph-dropdown__expand-icon--hover: var(--cl-primary);
+    --fs-menu__item: var(--fs-secondary);
+    --fs-graph-dropdown__setting: var(--fs-secondary);
+    --fs-div: var(--fs-secondary);
 }
 
 .roam-body .roam-app .roam-sidebar-container {
@@ -7677,13 +7684,6 @@ h1.rm-title-editing-display::before {
         border-bottom: 1px solid var(--bc-secondary);
     }
 }
-
-@media(prefers-color-scheme: light) {
-    .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
-        border-bottom: 1px solid var(--bc-secondary);
-    }
-}
-
 
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
