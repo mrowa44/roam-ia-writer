@@ -13,3 +13,10 @@
 ```
 
 Optionally, copy the [script.js](script.js) content to [[roam/js]] page
+
+
+Features:
+- iA Writer fonts
+- todos style
+- focus mode
+- autofocuses the last focused block on returning to roam
