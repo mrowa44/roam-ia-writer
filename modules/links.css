@@ -9,9 +9,6 @@
     --co-logbutton--hover: var(--cl-main);
     --co-starred__page--hover: var(--cl-main);
     --co-button__icon--hover: var(--cl-main);
-    --co-alias: var(--cl-main);
-    --co-alias--hover: var(--cl-main);
-    --td-alias--hover: underline;
 }
 
 span.rm-page-ref {
