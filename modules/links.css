@@ -12,7 +12,6 @@
     --co-alias: var(--cl-main);
     --co-alias--hover: var(--cl-main);
     --td-alias--hover: underline;
-    --co-main__namespace: var(--cl-main);
 }
 
 span.rm-page-ref {
