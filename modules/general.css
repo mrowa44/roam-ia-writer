@@ -4,13 +4,12 @@
   --cl-primary: #18BEEC;
   --cl-main: #1A1A1A;
   --cl-secondary: #C5C4C2;
-  --cl-main--nuke: #000;
   --bc-main: #F7F7F7;
   --bc-secondary: #FCFCFC;
   --bc-highlight: #FDE566;
   --co-brackets: #C7C3C2;
   --co-secondary: #C7C3C2;
-  --co-page__title: var(--cl-main--nuke);
+  --co-page__title: var(--cl-main);
   --bc-right-sidebar__content: var(--bc-secondary);
   --bc-right-sidebar__toprow: var(--bc-secondary);
   --bc-right-sidebar__container: var(--bc-secondary);
@@ -36,7 +35,6 @@
     :root {
         --cl-main: #CCCCCC;
         --cl-secondary: #707070;
-        --cl-main--nuke: #fff;
         --bc-main: #1A1A1A;
         --bc-secondary: #141414;
         --bc-highlight: #784C0D;

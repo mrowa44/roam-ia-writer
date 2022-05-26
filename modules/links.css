@@ -31,3 +31,14 @@ a:hover {
     background-color: transparent;
     color: var(--cl-main);
 }
+
+.rm-alias::before {
+  content: '[[';
+  font-family: var(--ff-main);
+  color: var(--cl-secondary);
+}
+.rm-alias::after {
+  content: ']]';
+  font-family: var(--ff-main);
+  color: var(--cl-secondary);
+}

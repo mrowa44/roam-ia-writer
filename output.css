@@ -7396,13 +7396,12 @@ hr {
   --cl-primary: #18BEEC;
   --cl-main: #1A1A1A;
   --cl-secondary: #C5C4C2;
-  --cl-main--nuke: #000;
   --bc-main: #F7F7F7;
   --bc-secondary: #FCFCFC;
   --bc-highlight: #FDE566;
   --co-brackets: #C7C3C2;
   --co-secondary: #C7C3C2;
-  --co-page__title: var(--cl-main--nuke);
+  --co-page__title: var(--cl-main);
   --bc-right-sidebar__content: var(--bc-secondary);
   --bc-right-sidebar__toprow: var(--bc-secondary);
   --bc-right-sidebar__container: var(--bc-secondary);
@@ -7428,7 +7427,6 @@ hr {
     :root {
         --cl-main: #CCCCCC;
         --cl-secondary: #707070;
-        --cl-main--nuke: #fff;
         --bc-main: #1A1A1A;
         --bc-secondary: #141414;
         --bc-highlight: #784C0D;
@@ -7546,47 +7544,29 @@ h1.rm-title-editing-display::before {
   transform: translate(8px, 0px);
 }
 /* Focus mode */
-.roam-block-container .roam-block {
-  color: var(--cl-main);
-}
-.rm-page-ref {
-    color: var(--cl-main);
-}
-.roam-block-container:focus-within .roam-block {
-  color: var(--cl-main);
-}
-.roam-block-container:focus-within > .rm-block-main > .roam-block {
-  color: var(--cl-main);
-}
-.roam-block-container:focus-within > .rm-block-main > .roam-block .rm-page-ref {
+.roam-block-container .roam-block,
+.rm-page-ref,
+a.rm-alias:not(.rm-alias--external),
+.rm-alias {
   color: var(--cl-main);
 }
 
-/* .roam-block-container:not(:focus-within) .rm-bold, */ 
-/* .roam-block-container:not(focus-within) .rm-bold::before, */ 
-/* .roam-block-container::not(focus-within) .rm-bold::after { */
-/*     color: var(--cl-main--nuke); */
-/* } */
-
-/* .roam-block-container:focus-within > .rm-block-main > .roam-block .rm-bold, */ 
-/* .roam-block-container:focus-within > .rm-block-main > .roam-block .rm-bold::before, */ 
-/* .roam-block-container:focus-within > .rm-block-main > .roam-block .rm-bold::after { */
-/*     color: var(--cl-main--nuke); */
-/* } */
-
-.roam-body .roam-app .roam-main .roam-article:focus-within .rm-title-display {
+.roam-body .roam-app .roam-main .roam-article:focus-within .rm-title-display,
+.rm-block-children:focus-within .roam-block,
+.rm-block-children:focus-within .rm-page-ref,
+.rm-block-children:focus-within a.rm-alias:not(.rm-alias--external),
+.rm-block-children:focus-within .rm-alias {
     color: var(--cl-secondary);
 }
-.rm-block-children:focus-within .roam-block {
-  color: var(--cl-secondary);
-}
-.rm-block-children:focus-within .rm-page-ref {
-  color: var(--cl-secondary);
+
+.roam-block-container:focus-within > .rm-block-main > .roam-block,
+.roam-block-container:focus-within > .rm-block-main > .roam-block .rm-page-ref,
+.roam-block-container:focus-within > .rm-block-main > .roam-block .rm-alias,
+.roam-block-container:focus-within > .rm-block-main > .roam-block a.rm-alias:not(.rm-alias--external) {
+  color: var(--cl-main);
 }
 
-.rm-multibar {
-  border-right-color: transparent;
-}
+
 
 /* Current bullet focus */
 :root {
@@ -7603,6 +7583,11 @@ h1.rm-title-editing-display::before {
         background-color: white !important;
     }
 }
+
+.rm-multibar {
+  border-right-color: transparent;
+}
+
 /* Hide topbar if block in focus */
 .rm-topbar {
   transition: transform 100ms ease-in-out;
@@ -7742,6 +7727,17 @@ a:hover {
 .rm-block-ref:hover {
     background-color: transparent;
     color: var(--cl-main);
+}
+
+.rm-alias::before {
+  content: '[[';
+  font-family: var(--ff-main);
+  color: var(--cl-secondary);
+}
+.rm-alias::after {
+  content: ']]';
+  font-family: var(--ff-main);
+  color: var(--cl-secondary);
 }
 @media (max-width: 600px) {
     :root {

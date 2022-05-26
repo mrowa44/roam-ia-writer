@@ -1,45 +1,28 @@
 /* Focus mode */
-.roam-block-container .roam-block {
-  color: var(--cl-main);
-}
-.rm-page-ref {
-    color: var(--cl-main);
-}
-.roam-block-container:focus-within .roam-block {
-  color: var(--cl-main);
-}
-.roam-block-container:focus-within > .rm-block-main > .roam-block {
-  color: var(--cl-main);
-}
-.roam-block-container:focus-within > .rm-block-main > .roam-block .rm-page-ref {
+
+.roam-block-container .roam-block,
+.rm-page-ref,
+a.rm-alias:not(.rm-alias--external),
+.rm-alias {
   color: var(--cl-main);
 }
 
-/* .roam-block-container:not(:focus-within) .rm-bold, */ 
-/* .roam-block-container:not(focus-within) .rm-bold::before, */ 
-/* .roam-block-container::not(focus-within) .rm-bold::after { */
-/*     color: var(--cl-main--nuke); */
-/* } */
-
-/* .roam-block-container:focus-within > .rm-block-main > .roam-block .rm-bold, */ 
-/* .roam-block-container:focus-within > .rm-block-main > .roam-block .rm-bold::before, */ 
-/* .roam-block-container:focus-within > .rm-block-main > .roam-block .rm-bold::after { */
-/*     color: var(--cl-main--nuke); */
-/* } */
-
-.roam-body .roam-app .roam-main .roam-article:focus-within .rm-title-display {
+.roam-body .roam-app .roam-main .roam-article:focus-within .rm-title-display,
+.rm-block-children:focus-within .roam-block,
+.rm-block-children:focus-within .rm-page-ref,
+.rm-block-children:focus-within a.rm-alias:not(.rm-alias--external),
+.rm-block-children:focus-within .rm-alias {
     color: var(--cl-secondary);
 }
-.rm-block-children:focus-within .roam-block {
-  color: var(--cl-secondary);
-}
-.rm-block-children:focus-within .rm-page-ref {
-  color: var(--cl-secondary);
+
+.roam-block-container:focus-within > .rm-block-main > .roam-block,
+.roam-block-container:focus-within > .rm-block-main > .roam-block .rm-page-ref,
+.roam-block-container:focus-within > .rm-block-main > .roam-block .rm-alias,
+.roam-block-container:focus-within > .rm-block-main > .roam-block a.rm-alias:not(.rm-alias--external) {
+  color: var(--cl-main);
 }
 
-.rm-multibar {
-  border-right-color: transparent;
-}
+
 
 /* Current bullet focus */
 :root {
@@ -56,3 +39,8 @@
         background-color: white !important;
     }
 }
+
+.rm-multibar {
+  border-right-color: transparent;
+}
+
