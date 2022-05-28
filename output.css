@@ -7433,8 +7433,17 @@ hr {
         --co-brackets: #707070;
         --co-secondary: #707070;
     }
+
+    ::selection {
+      background-color: #1F434E;
+    }
 }
 
+@media(prefers-color-scheme: light) {
+  ::selection {
+    background-color: #C8E8F5;
+  }
+}
 
 html {
   caret-color: var(--cl-primary);
@@ -7544,6 +7553,7 @@ h1.rm-title-editing-display::before {
   transform: translate(8px, 0px);
 }
 /* Focus mode */
+
 .roam-block-container .roam-block,
 .rm-page-ref,
 a.rm-alias:not(.rm-alias--external),

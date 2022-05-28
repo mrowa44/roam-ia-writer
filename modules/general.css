@@ -41,8 +41,17 @@
         --co-brackets: #707070;
         --co-secondary: #707070;
     }
+
+    ::selection {
+      background-color: #1F434E;
+    }
 }
 
+@media(prefers-color-scheme: light) {
+  ::selection {
+    background-color: #C8E8F5;
+  }
+}
 
 html {
   caret-color: var(--cl-primary);
