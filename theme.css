@@ -7622,13 +7622,13 @@ a.rm-alias:not(.rm-alias--external),
   background-color: var(--bc-highlight);
   border-color: #FFD700;
   color: rgba(26,26,26,0.9);
-}  
+}
 
 @media(prefers-color-scheme: dark) {
   .roam-block-container:focus-within > .rm-block-main > .roam-block .rm-highlight {
     color: rgba(204,204,204,0.9);
     border-color: #D4B000;
-  }  
+  }
 }
 
 .roam-block-container:focus-within > .rm-block-main > .roam-block .bp3-button {

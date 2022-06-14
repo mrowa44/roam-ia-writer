@@ -3,7 +3,7 @@
 [[roam/css]] page:
 
 ```css
-@import url('https://mrowa44.github.io/roam-ia-writer/output.min.css');
+@import url('https://mrowa44.github.io/roam-ia-writer/theme.min.css');
 
 :root {
   --ff-main: "iA Writer Duo"; 
