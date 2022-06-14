@@ -42,3 +42,7 @@ a:hover {
   font-family: var(--ff-main);
   color: var(--cl-secondary);
 }
+
+.rm-page-ref--tag {
+  color: var(--cl-secondary);
+}

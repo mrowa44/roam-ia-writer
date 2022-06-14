@@ -157,5 +157,5 @@
 :root {
     --ff-main: "iA Writer Duo", system-ui;
     --ff-mono: "iA Writer Mono", system-ui;
-    --ff-native: system-ui;
+    --ff-native: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }

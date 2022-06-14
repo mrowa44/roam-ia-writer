@@ -1384,7 +1384,7 @@ div, textarea {
 
 .rm-highlight {
 	background-color: 		var(--bc-highlight, hsl(51,98%,81%));
-	color: 					var(--co-highlight, inherit)!important;
+	color: 					var(--co-highlight, inherit);
 }
 
 .rm-hr, hr, .rm-line {
